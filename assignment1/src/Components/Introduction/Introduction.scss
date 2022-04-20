@@ -1,0 +1,74 @@
+.introduction {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px 50px;
+  article {
+    padding-right: 20px;
+    h1,
+    p {
+      text-align: left;
+      font-size: 26px;
+    }
+  }
+  figure {
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+
+#leaf {
+  animation-name: leaf;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-box: fill-box;
+  fill: darkolivegreen;
+}
+
+@keyframes leaf {
+  50% {
+    transform-origin: bottom right;
+    transform: translate(-3px) rotate(3deg);
+  }
+}
+
+#sun {
+  animation-name: sun;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  fill: orangered;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sun {
+  0% {
+    fill: yellow;
+  }
+  25% {
+    fill: orange;
+  }
+  50% {
+    fill: orangered;
+  }
+  100% {
+    fill: red;
+  }
+}
+
+@media (max-width: 800px) {
+  .introduction {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    article {
+      h1,
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
