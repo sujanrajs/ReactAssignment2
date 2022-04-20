@@ -1,5 +1,7 @@
 import React from "react";
 import "./Contactus.scss";
+import "../../Components/Button/Button";
+import Button from "../../Components/Button/Button";
 
 const Contactus = () => {
   return (
@@ -10,7 +12,7 @@ const Contactus = () => {
         <input type="text" name="email" placeholder="Email..." />
         <textarea name="textarea" placeholder="Messages"></textarea>
       </form>
-      <button class="btn">Submit!</button>
+      <Button label="Submit" />
     </section>
   );
 };
