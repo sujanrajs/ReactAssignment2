@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import Logo from "../../Assets/Images/logo.jpeg";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   return (
@@ -26,6 +27,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <div className="header__toggle">
+        <GiHamburgerMenu />
+      </div>
     </header>
   );
 };

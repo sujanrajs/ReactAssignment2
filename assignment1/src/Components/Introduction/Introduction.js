@@ -1,6 +1,6 @@
 import React from "react";
 import "./Introduction.scss";
-import IntroImage from "../../Assets/Images/intro_image.svg";
+import IntroImg from "../../Assets/Images/intro_image.svg";
 
 const Introduction = () => {
   return (
@@ -14,8 +14,8 @@ const Introduction = () => {
         </p>
       </article>
       <figure>
-        {/* <img src={IntroImage} alt="A scenery with a tree and sun" /> */}
-        <svg
+        <img src={IntroImg} alt="A scenery with a tree and sun" />
+        {/* <svg
           width="459"
           height="283"
           viewBox="0 0 659 483"
@@ -89,7 +89,7 @@ const Introduction = () => {
               <rect width="658.717" height="482.741" fill="white" />
             </clipPath>
           </defs>
-        </svg>
+        </svg> */}
       </figure>
     </section>
   );
