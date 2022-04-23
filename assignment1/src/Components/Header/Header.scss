@@ -13,6 +13,12 @@ header {
     text-align: center;
     text-decoration: none;
     font-size: 20px;
+
+    .MobileNavigation {
+      display: none;
+      align-items: center;
+    }
+
     ul {
       list-style: none;
     }
@@ -32,11 +38,34 @@ header {
 @media (max-width: 800px) {
   header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    ul {
-      padding-left: 0px;
+    nav {
+      opacity: 1;
+      .Navigation {
+        display: none;
+      }
+      .MobileNavigation {
+        display: flex;
+        background-color: red;
+        align-items: center;
+
+        .HamBrgrIcon {
+          position: absolute;
+          right: 5%;
+          cursor: pointer;
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: beige;
+      }
     }
   }
 }

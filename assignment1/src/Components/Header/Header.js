@@ -1,7 +1,8 @@
 import React from "react";
-import "./Header.scss";
+import Navigation from "./Navigation";
+import MobileNavigation from "./MobileNavigation";
 import Logo from "../../Assets/Images/logo.jpeg";
-import { GiHamburgerMenu } from "react-icons/gi";
+import "./Header.scss";
 
 const Header = () => {
   return (
@@ -12,26 +13,11 @@ const Header = () => {
         </a>
       </figure>
       <nav class="menu">
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="./Blogs/blogspage.html">Blogs</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+        <Navigation />
+        <MobileNavigation />
       </nav>
-      <div className="header__toggle">
-        <GiHamburgerMenu />
-      </div>
     </header>
   );
 };
 
-export default Header;
+export default Header; 

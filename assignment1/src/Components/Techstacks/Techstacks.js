@@ -1,6 +1,6 @@
 import React from "react";
-import "./Techstacks.scss";
 import { SiJavascript, SiHtml5, SiReact, SiSass, SiCss3 } from "react-icons/si";
+import "./Techstacks.scss";
 
 const Techstacks = () => {
   return (

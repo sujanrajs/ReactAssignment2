@@ -1,6 +1,6 @@
 import React from "react";
-import "./Scrolldown.scss";
 import BouncingArrow from "../../Assets/Images/arrow.svg";
+import "./Scrolldown.scss";
 
 const Scrolldown = () => {
   return (
