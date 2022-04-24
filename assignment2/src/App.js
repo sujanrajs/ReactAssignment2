@@ -1,10 +1,12 @@
 import "./App.css";
-import HookedCountry from "./Components/useCountry";
+import CountryUsingHook from "./Components/CountryUsingHook";
+import CountryUsingHoc from "./Components/CountryUsingHoc";
 
 function App() {
   return (
     <div className="App">
-      <HookedCountry />
+      <CountryUsingHook />
+      <CountryUsingHoc />
     </div>
   );
 }

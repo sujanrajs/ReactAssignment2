@@ -8,7 +8,7 @@ const useCountry = (name) => {
     const baseURL = `https://restcountries.com/v3.1/name/${name}`;
     console.log("useCountry Hook: ", name);
 
-    const getCuntryByName = async () => {
+    const getCountryByName = async () => {
       try {
         const req = await fetch(baseURL);
         if (!req.ok) {
@@ -20,7 +20,7 @@ const useCountry = (name) => {
         setError(err);
       }
     };
-    getCuntryByName();
+    getCountryByName();
   }, [name]);
 
   return [data, error];

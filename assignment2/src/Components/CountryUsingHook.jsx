@@ -1,10 +1,10 @@
 import useCountry from "../Hooks/useCountry";
 
-const HookedCountry = () => {
+const CountryUsingHook = () => {
   console.log("before state");
 
   const [country, error] = useCountry("Finland");
-  console.log("using Hook", country);
+  console.log("using hook", country);
 
   return (
     <div>
@@ -15,7 +15,7 @@ const HookedCountry = () => {
           {country &&
             country.map((country_name) => {
               return (
-                <div>
+                <div key={country_name.cca2}>
                   <p>
                     Fetched Country Name using React Hook:{" "}
                     {country_name.name.common}
@@ -29,4 +29,4 @@ const HookedCountry = () => {
   );
 };
 
-export default HookedCountry;
+export default CountryUsingHook;
